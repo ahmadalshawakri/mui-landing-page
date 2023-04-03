@@ -1,0 +1,10 @@
+.btnCont {
+  display: flex !important;
+  justify-content: space-between;
+  padding: 0 6rem 0 3rem !important;
+}
+
+.linksBox {
+  display: flex;
+  gap: 2rem;
+}
