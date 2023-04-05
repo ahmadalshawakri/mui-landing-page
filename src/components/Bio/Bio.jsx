@@ -7,7 +7,7 @@ import styles from "./Bio.module.css";
 const Bio = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.infoCont}>~
+      <div className={styles.infoCont}>
         <Typography variant="h2" sx={{ fontWeight: "700" }}>
           More Than just shorter links
         </Typography>
