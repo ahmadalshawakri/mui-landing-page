@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TextButton from "../UI/TextButton/TextButton";
 import ContainedButton from "../UI/ContainedButton/ContainedButton";
 import {
@@ -22,7 +22,7 @@ const NavBar = () => {
   const appTheme = useTheme();
   const match = useMediaQuery(appTheme.breakpoints.down("md"));
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
