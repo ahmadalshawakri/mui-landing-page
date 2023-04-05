@@ -6,7 +6,7 @@ const ContainedButton = ({ children, width }) => {
     width: width,
     background: "hsl(180, 66%, 49%)",
     color: "#fff",
-    fontWeigth: "700",
+    fontWeight: "700",
     borderRadius: "1rem",
     textAlign: "center",
   };

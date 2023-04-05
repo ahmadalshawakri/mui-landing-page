@@ -38,7 +38,7 @@ const NavBar = () => {
       elevation={0}
       variant="outlined"
       color="transparent"
-      sx={{ border: "none", paddingLeft: "6rem" }}
+      sx={{ border: "none", paddingLeft: match ? "0" : "6rem" }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <Typography
