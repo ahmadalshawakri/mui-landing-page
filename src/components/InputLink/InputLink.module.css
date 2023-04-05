@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: hsl(260, 8%, 14%);
+  background-image: url(../../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 6rem 6rem;
+  border-radius: 0.3rem;
+}
+
+.contnet {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        background-image: url(../../images/bg-shorten-mobile.svg);
+    }
+    .contnet{
+        flex-direction: column;
+    }
+    
+}
