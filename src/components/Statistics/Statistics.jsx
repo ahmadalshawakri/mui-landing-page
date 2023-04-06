@@ -87,8 +87,9 @@ const Statistics = () => {
           <CardContent className={styles.cardsContent}>
             <Typography variant="h5">Detailed Records</Typography>
             <Typography variant="body1">
-              Boost your brand recognition with each click. Generic links don't
-              mean a thing. Branded links helpinstill confidence in your content
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions
             </Typography>
           </CardContent>
         </Card>
@@ -124,11 +125,11 @@ const Statistics = () => {
               />
             }
           />
-          <CardContent>
+          <CardContent className={styles.cardsContent}>
             <Typography variant="h5">Fully Custom</Typography>
             <Typography variant="body1">
-              Boost your brand recognition with each click. Generic links don't
-              mean a thing. Branded links helpinstill confidence in your content
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
             </Typography>
           </CardContent>
         </Card>
