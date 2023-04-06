@@ -20,11 +20,10 @@
 }
 
 @media screen and (max-width: 900px) {
-    .container{
-        background-image: url(../../images/bg-shorten-mobile.svg);
-    }
-    .contnet{
-        flex-direction: column;
-    }
-    
+  .container {
+    background-image: url(../../images/bg-shorten-mobile.svg);
+  }
+  .contnet {
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header h2 {
+  text-align: center;
+}
+.header p {
+  width: 40%;
+  text-align: center;
+  color: hsl(0, 0%, 60%);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardsContent {
+  padding: 2rem;
+}
+
+.cardsContent h5 {
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.cardsContent p {
+  color: hsl(0, 0%, 60%);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    gap: 3rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .header p {
+    width: 60%;
+  }
+}
