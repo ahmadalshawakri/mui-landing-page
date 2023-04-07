@@ -8,11 +8,15 @@ import LowerFooter from "./components/Footer/LowerFooter/LowerFooter";
 function App() {
   return (
     <>
-      <NavBar />
-      <Bio />
-      <InputLink />
-      <Statistics />
-      <UpperFooter />
+      <div>
+        <NavBar />
+        <Bio />
+      </div>
+      <div style={{ background: "hsl(0, 0%, 90%)" }}>
+        <InputLink />
+        <Statistics />
+        <UpperFooter />
+      </div>
       <LowerFooter />
     </>
   );
