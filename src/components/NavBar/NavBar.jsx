@@ -70,27 +70,27 @@ const NavBar = () => {
             >
               <MenuItem
                 onClick={handleCloseNavMenu}
-                sx={{ display: "flex", justifyContent: "center" }}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  gap: "1rem",
+                }}
               >
                 <TextButton textColor="#fff">Features</TextButton>
-              </MenuItem>
-              <MenuItem
-                onClick={handleCloseNavMenu}
-                sx={{ display: "flex", justifyContent: "center" }}
-              >
                 <TextButton textColor="#fff">Pricing</TextButton>
-              </MenuItem>
-              <MenuItem
-                onClick={handleCloseNavMenu}
-                sx={{ display: "flex", justifyContent: "center" }}
-              >
                 <TextButton textColor="#fff">Resources</TextButton>
               </MenuItem>
               <Divider sx={{ my: 0.5 }} />
-              <MenuItem sx={{ display: "flex", justifyContent: "center" }}>
+              <MenuItem
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  gap: "1rem",
+                }}
+              >
                 <TextButton textColor="#fff">Login</TextButton>
-              </MenuItem>
-              <MenuItem sx={{ display: "flex", justifyContent: "center" }}>
                 <ContainedButton width="10rem">SignUp</ContainedButton>
               </MenuItem>
             </Menu>
