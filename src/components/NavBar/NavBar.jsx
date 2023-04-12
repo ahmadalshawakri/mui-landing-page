@@ -22,6 +22,13 @@ const NavBar = () => {
   const appTheme = useTheme();
   const match = useMediaQuery(appTheme.breakpoints.down("md"));
 
+  const menuItemCustomStyle = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    gap: "1rem",
+  };
+
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -68,28 +75,13 @@ const NavBar = () => {
                 },
               }}
             >
-              <MenuItem
-                onClick={handleCloseNavMenu}
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  gap: "1rem",
-                }}
-              >
+              <MenuItem onClick={handleCloseNavMenu} sx={menuItemCustomStyle}>
                 <TextButton textColor="#fff">Features</TextButton>
                 <TextButton textColor="#fff">Pricing</TextButton>
                 <TextButton textColor="#fff">Resources</TextButton>
               </MenuItem>
               <Divider sx={{ my: 0.5 }} />
-              <MenuItem
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  gap: "1rem",
-                }}
-              >
+              <MenuItem sx={menuItemCustomStyle}>
                 <TextButton textColor="#fff">Login</TextButton>
                 <ContainedButton width="10rem">SignUp</ContainedButton>
               </MenuItem>

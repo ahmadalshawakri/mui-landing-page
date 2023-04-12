@@ -15,6 +15,28 @@ import styles from "./LowerFooter.module.css";
 const LowerFooter = () => {
   const appTheme = useTheme();
   const match = useMediaQuery(appTheme.breakpoints.down("md"));
+
+  const customStyles = {
+    lists: {
+      padding: "0",
+      margin: "0",
+      height: "1rem",
+      color: "#ccc",
+    },
+
+    listsBtns: {
+      justifyContent: `${match ? "center" : "flexStart"}`,
+      padding: "0",
+      fontFamily: "Poppins",
+    },
+
+    listsHeaders: {
+      color: "#fff",
+      fontFamily: "Poppins",
+      fontWeight: "700",
+    },
+  };
+
   return (
     <footer className={styles.footerCont}>
       <Typography
@@ -24,167 +46,65 @@ const LowerFooter = () => {
         Shortly
       </Typography>
       <div className={styles.footerLinks}>
-        <Typography
-          sx={{ color: "#fff", fontFamily: "Poppins", fontWeight: "700" }}
-        >
-          Features
-        </Typography>
+        <Typography sx={customStyles.listsHeaders}>Features</Typography>
         <List className={styles.footerList}>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                justifyContent: `${match ? "center" : "flexStart"}`,
-                padding: "0",
-                fontFamily: "Poppins",
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               Link Shortening
             </ListItemButton>
           </ListItem>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                padding: "0",
-                fontFamily: "Poppins",
-                justifyContent: `${match ? "center" : "flexStart"}`,
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               Branded Links
             </ListItemButton>
           </ListItem>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                padding: "0",
-                fontFamily: "Poppins",
-                justifyContent: `${match ? "center" : "flexStart"}`,
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               Analytics
             </ListItemButton>
           </ListItem>
         </List>
       </div>
       <div className={styles.footerLinks}>
-        <Typography
-          sx={{ color: "#fff", fontFamily: "Poppins", fontWeight: "700" }}
-        >
-          Resources
-        </Typography>
+        <Typography sx={customStyles.listsHeaders}>Resources</Typography>
         <List className={styles.footerList}>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                padding: "0",
-                fontFamily: "Poppins",
-                justifyContent: `${match ? "center" : "flexStart"}`,
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               Blog
             </ListItemButton>
           </ListItem>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                padding: "0",
-                fontFamily: "Poppins",
-                justifyContent: `${match ? "center" : "flexStart"}`,
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               Developers
             </ListItemButton>
           </ListItem>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                padding: "0",
-                fontFamily: "Poppins",
-                justifyContent: `${match ? "center" : "flexStart"}`,
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               Support
             </ListItemButton>
           </ListItem>
         </List>
       </div>
       <div className={styles.footerLinks}>
-        <Typography
-          sx={{ color: "#fff", fontFamily: "Poppins", fontWeight: "700" }}
-        >
-          Company
-        </Typography>
+        <Typography sx={customStyles.listsHeaders}>Company</Typography>
         <List className={styles.footerList}>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                padding: "0",
-                fontFamily: "Poppins",
-                justifyContent: `${match ? "center" : "flexStart"}`,
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               About
             </ListItemButton>
           </ListItem>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                padding: "0",
-                fontFamily: "Poppins",
-                justifyContent: `${match ? "center" : "flexStart"}`,
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               Our Team
             </ListItemButton>
           </ListItem>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                padding: "0",
-                fontFamily: "Poppins",
-                justifyContent: `${match ? "center" : "flexStart"}`,
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               Careers
             </ListItemButton>
           </ListItem>
-          <ListItem
-            sx={{ padding: "0", margin: "0", height: "1rem", color: "#ccc" }}
-          >
-            <ListItemButton
-              alignItems="flex-start"
-              sx={{
-                padding: "0",
-                fontFamily: "Poppins",
-                justifyContent: `${match ? "center" : "flexStart"}`,
-              }}
-            >
+          <ListItem sx={customStyles.lists}>
+            <ListItemButton alignItems="flex-start" sx={customStyles.listsBtns}>
               Contact
             </ListItemButton>
           </ListItem>

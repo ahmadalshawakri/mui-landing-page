@@ -17,6 +17,21 @@ import styles from "./Statistics.module.css";
 const Statistics = () => {
   const appTheme = useTheme();
   const match = useMediaQuery(appTheme.breakpoints.down("md"));
+
+  const customStyles = {
+    avatars: {
+      background: "hsl(257, 27%, 26%)",
+      position: "absolute",
+      transform: "translate(30%, -80%)",
+      padding: "0.6rem",
+    },
+    dividers: {
+      width: match ? "1rem" : "2rem",
+      height: match ? "3rem" : "0.7rem",
+      background: "hsl(180, 66%, 49%)",
+    },
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -33,12 +48,7 @@ const Statistics = () => {
               <Avatar
                 src={brandRecognition}
                 alt="Brand Recognition"
-                sx={{
-                  background: "hsl(257, 27%, 26%)",
-                  position: "absolute",
-                  transform: "translate(30%, -80%)",
-                  padding: "0.6rem",
-                }}
+                sx={customStyles.avatars}
               />
             }
           />
@@ -55,11 +65,7 @@ const Statistics = () => {
 
         <Divider
           orientation={match ? "vertical" : "horizontal"}
-          sx={{
-            width: match ? "1rem" : "2rem",
-            height: match ? "3rem" : "0.7rem",
-            background: "hsl(180, 66%, 49%)",
-          }}
+          sx={customStyles.dividers}
         />
 
         <Card
@@ -74,13 +80,8 @@ const Statistics = () => {
             avatar={
               <Avatar
                 src={detailedRecords}
-                alt="Brand Recognition"
-                sx={{
-                  background: "hsl(257, 27%, 26%)",
-                  position: "absolute",
-                  transform: "translate(30%, -80%)",
-                  padding: "0.6rem",
-                }}
+                alt="Detailed Records"
+                sx={customStyles.avatars}
               />
             }
           />
@@ -96,11 +97,7 @@ const Statistics = () => {
 
         <Divider
           orientation={match ? "vertical" : "horizontal"}
-          sx={{
-            width: match ? "1rem" : "2rem",
-            height: match ? "3rem" : "0.7rem",
-            background: "hsl(180, 66%, 49%)",
-          }}
+          sx={customStyles.dividers}
         />
 
         <Card
@@ -115,13 +112,8 @@ const Statistics = () => {
             avatar={
               <Avatar
                 src={fullyCustom}
-                alt="Brand Recognition"
-                sx={{
-                  background: "hsl(257, 27%, 26%)",
-                  position: "absolute",
-                  transform: "translate(30%, -80%)",
-                  padding: "0.6rem",
-                }}
+                alt="Fully Custom"
+                sx={customStyles.avatars}
               />
             }
           />

@@ -17,7 +17,7 @@ const InputLink = () => {
             backgroundColor: "#fff",
             borderRadius: "0.4rem",
           }}
-        ></TextField>
+        />
         <ContainedButton width={match ? "80%" : "10rem"} radius="0.4rem">
           Shorten it!
         </ContainedButton>
